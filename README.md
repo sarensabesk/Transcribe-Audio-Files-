@@ -34,7 +34,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 ## ▶️ Usage
-🎵 Transcribe a single file
+
+### 🎵 Transcribe a single file
 python transcribe.py video_sound.mp3
 
 ### 📄 Example Output
