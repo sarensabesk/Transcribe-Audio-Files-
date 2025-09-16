@@ -23,53 +23,37 @@ While simple in design, it demonstrates how cutting-edge AI models like Whisper 
 ## ⚙️ Setup  
 
 ### 1️⃣ Clone the repo  
-```bash
 git clone https://github.com/your-username/whisper-transcriber.git
 cd whisper-transcriber
-2️⃣ Create a virtual environment
-bash
-Copy code
+
+### 2️⃣ Create a virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
-3️⃣ Install dependencies
-bash
-Copy code
+
+### 3️⃣ Install dependencies
 pip install -r requirements.txt
 
-▶️ Usage
+## ▶️ Usage
 🎵 Transcribe a single file
-bash
-Copy code
 python transcribe.py video_sound.mp3
-📄 Example Output
-makefile
-Copy code
-Input:  video_sound.mp3  
+
+### 📄 Example Output
+Input: video_sound.mp3
 Output: transcription.txt (contains the full transcript)
 
-🔍 How It Works
-Loads the Whisper model (base by default).
+### 🔍 How It Works
+- Loads the Whisper model (base by default).
+- Accepts an audio or video file as input.
+- Runs transcription locally (no need for internet after install).
+- Saves the result in a .txt file for easy access.
 
-Accepts an audio or video file as input.
+## 🚀 Future Improvements
+- 📂 Batch transcriptions for entire folders
+- 📝 Export in .srt (subtitles) or .json formats
+- 🔧 Support for different Whisper model sizes (small, medium, large)
 
-Runs transcription locally (no need for internet after install).
-
-Saves the result in a .txt file for easy access.
-
-🚀 Future Improvements
-📂 Batch transcriptions for entire folders
-
-📝 Export in .srt (subtitles) or .json formats
-
-🔧 Support for different Whisper model sizes (small, medium, large)
-
-🙌 What I Did
-Built a Python script around OpenAI’s Whisper library
-
-Integrated it into a VS Code project with a clean virtual environment setup
-
-Tested it on multiple file types to ensure compatibility
-
-Packaged the dependencies so anyone can download and use it easily
-
-💡 With just a few lines of code, this project shows how AI speech recognition can be applied to everyday tasks — from meeting notes to podcast transcripts.
+## 🙌 What I Did
+- Built a Python script around OpenAI’s Whisper library
+- Integrated it into a VS Code project with a clean virtual environment setup
+- Tested it on multiple file types to ensure compatibility
+- Packaged the dependencies so anyone can download and use it easily
